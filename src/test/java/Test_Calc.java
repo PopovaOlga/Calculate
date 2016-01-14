@@ -24,8 +24,32 @@ public class Test_Calc {
 
     }
 
+    @Test
+    public void testAddTwoValues() {
+        // Class for testing
+        Calc calc = new Calc();
+
+        // Method to check
+        assertEquals("0 + 5 must be 5", 5, calc.add(0, 5));
+    }
+    @Test
+        public void testDivisionWithNullValues() {
+        // Class for testing
+        Calc calc = new Calc();
+
+        // Method to check
+        assertEquals("0 / 5 must be 0", 0, calc.division(0, 5));
+    }
+        @Test
+        public void testMultiplyWithNullValues() {
+            // Class for testing
+            Calc calc = new Calc();
+
+            // Method to check
+            assertEquals("0 * 5 must be 0", 0, calc.multiply(0, 5));
+        }
     @After
     public void consolePrintAfter() {
-        System.out.println("Tests finished!!! ");
+        System.out.println("Congrats!!! ");
     }
 }
